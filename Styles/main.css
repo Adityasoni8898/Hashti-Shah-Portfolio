@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+
+:root{
+    --custom_grey: #353535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Hind', sans-serif;
+    color: white;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+}
+
+.active_link{
+    text-decoration: underline;
+}
+
+.hero_nav_container{
+    background: url("../Assets/hero_background.png");
+    height: 100vh;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 6%;
+}
+
+.logo img{
+    height: 75px;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+
+.nav_links a{
+    font-weight: 500;
+}
