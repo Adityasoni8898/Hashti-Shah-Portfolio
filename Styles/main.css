@@ -66,6 +66,7 @@ nav{
 }
 
 .nav_links a{
+    font-size: 20px;
     font-weight: 500;
     transition: 0.5s ease;
 }
@@ -74,11 +75,50 @@ nav{
     text-decoration: underline;
 }
 
+.submenu {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    white-space: nowrap; 
+}
+  
+.has-submenu {
+    position: relative;
+}
+
+.submenu a{
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.has-submenu:hover .submenu {
+    margin-top: 5px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 10px;
+}
+
+
 
 /* hero */
 .hero_container{
     position: relative;
     height: 70vh;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero video{
+    margin: 100px;
+    width: 55%;
+    box-shadow: 0px 0px 20px 3px rgba(75, 75, 75, 0.25);
 }
 
 .hero_video{
@@ -87,7 +127,7 @@ nav{
     font-size: 140px;
     font-weight: 500;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 15%;
 }
 
@@ -97,14 +137,11 @@ nav{
     font-size: 140px;
     font-weight: 500;
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     right: 15%;
 }
 
-.hero_video_container{
-    width: 50vw;
-    background-color: #353535;
-}
+
 
 
 /* about us */
@@ -121,17 +158,17 @@ nav{
   -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; /* For Safari */
     font-weight: 500;
-    font-size: 90px;
+    font-size: 100px;
 }
 
 .about_us p{
-    margin-left: 7%;
-    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     color: #A8A8A8;
-    font-size: 30px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .all_services_link{
@@ -140,21 +177,22 @@ nav{
 }
 
 .all_services_link a{
-    margin-top: 30px;
+    margin-top: 40px;
     color: rgba(255, 255, 255, 0.80);
     font-family: Hind;
-    font-size: 26px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration-line: underline;
-    margin-right: 60px;
+    margin-right: 15%;
 }
 
 .about_us_services{
     display: flex;
     overflow-x: auto;
     position: relative;
+    padding-right: 51px;
 }
 
 .about_us_services::-webkit-scrollbar{
@@ -194,14 +232,15 @@ text-decoration-line: underline;
 /* Creative Works */
 .creative_works{
     background-color: black;
-    padding-top: 100px;
+    padding-top: 120px;
+    padding-bottom: 80px;
 }
 
 .creative_works h1{
     margin-right: 1%;
     display: flex;
     justify-content: right;
-    font-size: 151px;
+    font-size: 150px;
     font-style: normal;
     font-weight: 500;
     background: -webkit-linear-gradient(#363636, #000000);
@@ -211,9 +250,20 @@ text-decoration-line: underline;
 }
 
 .work_show{
-    margin: 50px 90px 0px 50px;
+    padding: 10px 12%;
+    margin-bottom: 20px;
     display: flex;
     justify-content: left;
+}
+
+.work_show_display video{
+    width: 45vw;
+    transition: 0.2s;
+}
+
+.work_show_display video:hover{
+    box-shadow: 0 0px 10px 2px rgba(255, 255, 255, 0.25);
+    transform: scale(102%);
 }
 
 .work_show_text{
@@ -231,26 +281,29 @@ text-decoration-line: underline;
 
 .work_show_text p{
     color: #A8A8A8;
-    font-size: 22px;
-font-style: normal;
-font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .work_show_text a{
+    color: rgba(255, 255, 255, 0.80);
     font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration-line: underline;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
 }
 
 /* project journey */
 .project_journey{
     margin-top: 20px;
-    padding: 100px;
+    padding: 60px 0 120px 0;
+    background-color: #151515;
 }
 
 .project_journey h1{
+    margin-left: 15%;
     color: rgba(255, 255, 255, 0.80);
 font-size: 60px;
 font-style: normal;
@@ -261,12 +314,27 @@ font-weight: 500;
     margin-top: 50px;
     display: flex;
     gap: 25px;
+    overflow-x: auto;
+    padding: 15px;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.journey_elements_container::-webkit-scrollbar{
+    display:none;
 }
 
 .journey_element{
     background-color: white;
     padding: 31px;
-    max-width: 480px;
+    min-width: 480px;
+    transition: 0.2s;
+}
+
+.journey_element:hover{
+    box-shadow: 0 0px 10px 2px rgba(255, 255, 255, 0.25);
+    transform: scale(102%);
+    cursor: Pointer;
 }
 
 .journey_element h3{
@@ -287,20 +355,24 @@ color: #202020;
 }
 
 /* blog */
+.blogs{
+    background-color: #151515;
+}
+
+
 .blogs h1{
     display: flex;
     justify-content: right;
-    margin-right: 100px;
+    margin-right: 15%;
     color: rgba(255, 255, 255, 0.80);
-font-family: Hind;
-font-size: 60px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .blogs_container {
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -309,6 +381,12 @@ line-height: normal;
 .blog{
     padding: 20px;
     background-color: white;
+  -webkit-transition: transform 0.2s ease 0s;
+}
+
+.blog:hover{
+    -webkit-transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 
 .blog h2{
@@ -320,8 +398,8 @@ line-height: normal;
 }
 
 .blogs a{
-    margin-top: 30px;
-    margin-left: 100px;
+    margin-top: 26px;
+    margin-left: 15%;
     color: rgba(255, 255, 255, 0.70);
 font-size: 30px;
 font-style: normal;
@@ -329,6 +407,7 @@ font-weight: 400;
 line-height: normal;
 text-decoration-line: underline;
 }
+
 
 /* footer */
 footer{
