@@ -381,12 +381,12 @@ color: #202020;
 .blog{
     padding: 20px;
     background-color: white;
-  -webkit-transition: transform 0.2s ease 0s;
+    -webkit-transition: transform 0.2s ease 0s;
 }
 
 .blog:hover{
     -webkit-transform: translateY(-12px);
-  transform: translateY(-12px);
+    transform: translateY(-12px);
 }
 
 .blog h2{
@@ -397,8 +397,12 @@ font-weight: 400;
 line-height: normal;
 }
 
-.blogs a{
-    margin-top: 26px;
+.blog_see_all{
+    margin-top: 25px;
+    padding-bottom: 100px;
+}
+
+.blog_see_all a{
     margin-left: 15%;
     color: rgba(255, 255, 255, 0.70);
 font-size: 30px;
@@ -415,19 +419,460 @@ footer{
     flex-direction: column;
     align-items: center;
     background: #0C0D0F;
+    padding: 0 10%;
 }
 
 footer>img{
     padding: 70px;
 }
 
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    width: 100%;
+}
+
+.interested{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.interested h1{
+    color: #FFF;
+font-size: 60px;
+font-style: normal;
+font-weight: 600;
+
+}
+
+.empty_fill{
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
+}
+
+.interested p{
+    color: rgba(255, 255, 255, 0.70);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.email_form{
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.email_form input{
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.75);
+font-family: Hind;
+font-size: 18px;
+    width: 420px;
+height: 46px;
+flex-shrink: 0;
+}
+
+.email_form button{
+    padding: 5px 19px;
+    background-color: #000;
+    color: #FFF;
+font-family: Hind;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+    height: 46px;
+}
+
+.contact{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact h1{
+    color: #FFF;
+font-family: Hind;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+}
+
+.socials{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.socials h1{
+    color: #FFF;
+font-family: Hind;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.navigation h1{
+    color: #FFF;
+font-family: Hind;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+}
+
+
 footer hr{
-    width: 80%;
+    margin-top: 70px;
+    width: 100%;
 }
 
 .footer_end{
+    margin-top: 70px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: center;
     gap: 50px;
     align-items: center;
+}
+
+
+
+
+@media screen and (max-width:1350px){
+    .hero video {
+        margin-top: 130px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_us h1{
+        font-size: 80px;
+    }
+
+    .about_us p{
+        font-size: 20px;
+    }
+
+    .creative_works {
+        padding-top: 100px;
+    }
+
+    .creative_works h1{
+        font-size: 12vw;
+    }
+
+    .work_show_display video {
+        width: 40vw;
+    }
+
+    .work_show_text p {
+        font-size: 18px;
+    }
+
+    .work_show_text a{
+        font-size: 22px;
+    }
+
+    .project_journey {
+        margin-top: 0px;
+        padding: 40px 0 80px 0;
+    }
+
+    .project_journey h1{
+        font-size: 52px;
+    }
+
+    .journey_elements_container{
+        margin-top: 30px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .journey_element {
+        background-color: white;
+        padding: 31px;
+        min-width: 400px;
+        transition: 0.2s;
+    }
+
+    .journey_element img{
+        height: 90px;
+        width: 90px;
+    }
+
+
+    .blogs h1{
+        font-size: 52px;
+    }
+
+    .blogs_container {
+        padding-left: 8%;
+        overflow-x: auto;
+        justify-content: left;
+    }
+
+    .blogs_container::-webkit-scrollbar{
+        display:none;
+    }
+
+    .blog img{
+        width: 320px;
+        height: auto;
+    }
+
+    .blog_see_all a{
+        font-size: 24px;
+    }
+}
+
+
+
+
+@media screen and (max-width:1000px){
+
+    .hero_nav_container{
+        height: 80vh;
+    }
+
+    .hero_video {
+        font-size: 100px;
+        font-weight: 500;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    }
+
+    .hero_editing{
+        font-size: 100px;
+        bottom: 25%;
+    }
+
+
+    .creative_works {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .work_show_display video{
+        width: 80%;
+    }
+
+    .work_show{
+        flex-direction: column;
+    }
+
+    .work_show_text{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .work_show_text a{
+        margin-top: 10px;
+    }
+
+    .footer_content{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (max-width:750px){
+
+    .hero_nav_container{
+        height: 65vh;
+    }
+
+    .hero_video {
+        font-size: 65px;
+        font-weight: 500;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+
+    .hero_editing{
+        font-size: 65px;
+        bottom: 35%;
+    }
+
+    .about_us h1{
+        font-size: 46px;
+        margin-left: 10px;
+    }
+
+    .about_us p{
+        font-size: 14px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+
+    .film_roll {
+        min-height: 181px;
+        max-height: 181px;
+        max-width: 156px;
+        min-width: 156px;
+        background-image: url(../Assets/Film_roll_bg_mobile.png);
+    }
+
+    .film_roll a{
+        font-size: 14px;
+    }
+
+    .all_services_link a {
+        margin-top: 10px;
+        font-size: 16px;
+        margin-right: 8%;
+    }
+
+    .creative_works {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    .creative_works h1 {
+        font-size: 14vw;
+    }
+
+    .work_show_display video {
+        width: 100%;
+    }
+
+    .work_show_text h2 {
+        font-size: 30px;
+    }
+
+    .work_show_text p {
+        font-size: 14px;
+    }
+
+    .work_show_text a {
+        font-size: 16px;
+    }
+
+    .project_journey {
+        margin-top: 0px;
+        padding: 21px 0 30px 0;
+    }
+
+    .project_journey h1{
+        font-size: 32px;
+        margin-left: 20px;
+    }
+
+    .journey_elements_container {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .journey_element {
+        padding: 20px;
+        min-width: 300px;
+    }
+
+    .journey_element h3 {
+        margin-top: 24px;
+        font-size: 24px;
+    }
+
+    .journey_element p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .blogs h1 {
+        padding-top: 20px;
+        margin-right: 20px;
+        font-size: 32px;
+    }
+
+    .blogs_container {
+        padding-left: 20px;
+    }
+
+    .blogs_container {
+        padding-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .blog{
+        padding: 15px;
+    }
+
+    .blog img{
+        width: 260px;
+        height: auto;
+    }
+
+
+    .blog h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+
+    .hero_nav_container{
+        height: 60%;
+    }
+    
+    .hero video{
+        width: 85%;
+    }
+
+    .hero_video {
+        font-size: 70px;
+        font-weight: 500;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+
+    .hero_editing{
+        font-size: 70px;
+        bottom: 40%;
+    }
+
+}
+
+@media screen and (max-width:450px){
+
+    
+    .hero video{
+        width: 85%;
+    }
+
+    .hero_video {
+        font-size: 65px;
+        font-weight: 500;
+        position: absolute;
+        top: 18%;
+        left: 15%;
+    }
+
+    .hero_editing{
+        font-size: 65px;
+        bottom: 45%;
+    }
 }
