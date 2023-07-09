@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
-:root{
-    --custom_grey: #353535;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -97,13 +93,81 @@ nav{
 
 /* main */
 
+main{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 .portfolio_title h1{
-    margin-left: 2%;
     animation: background-pan 5s linear infinite; 
   background: linear-gradient(to right, #DE57FF, #513aff, #83c5ff, #DE57FF);
   background-size: 200%;
   -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; /* For Safari */
     font-weight: 500;
-    font-size: 10vw;
+    font-size: 8vw;
+}
+
+.active{
+    text-decoration: underline;
+    color: white;
+}
+
+.work_types{
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+}
+
+.work_types p{
+    font-size: 26px;
+}
+
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.display_element{
+    position: relative;
+}
+
+.display_element video{
+    height: 411px;
+}
+
+.display_title{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    bottom: 20px;
+    left: 20px;
+}
+
+.display_title h1{
+    font-size: 25px;
+font-style: normal;
+font-weight: 500;
+color: white;
+}
+
+.display_title p{
+    margin-top: 6px;
+    color: #D6D6D6;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#type1{
+    text-decoration: underline;
+}
+
+#type_2, #type_3, #type_4{
+    display: none;
 }

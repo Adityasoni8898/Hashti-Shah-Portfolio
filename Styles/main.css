@@ -685,6 +685,11 @@ footer hr{
         margin-top: 10px;
     }
 
+    .journey_element img{
+        height: 70px;
+        width: 70px;
+    }
+
     .footer_content{
         flex-wrap: wrap;
     }
@@ -789,13 +794,13 @@ footer hr{
     }
 
     .journey_element h3 {
-        margin-top: 24px;
-        font-size: 24px;
+        margin-top: 10px;
+        font-size: 22px;
     }
 
     .journey_element p {
         max-width: 100%;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .blogs h1 {
@@ -819,7 +824,7 @@ footer hr{
     }
 
     .blog img{
-        width: 260px;
+        width: 240px;
         height: auto;
     }
 

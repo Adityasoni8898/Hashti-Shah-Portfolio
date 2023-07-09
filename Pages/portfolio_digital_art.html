@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../Styles/portfolio_digital_art.css">
     <link rel="icon" href="../Assets/logo.png" type="image/icon type">
+
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+    <script src="../Scripts/porfolio.js" defer></script>
+
     <title>Hasti Shah</title>
 </head>
 <body>
@@ -56,13 +63,139 @@
         </div>
         <div class="work_container">
             <div class="work_types">
-                <p class="type1"></p>
-                <p class="type1"></p>
-                <p class="type1"></p>
-                <p class="type1"></p>
+                <p id="type1">Type 1</p>
+                <p id="type2">Type 2</p>
+                <p id="type3">Type 3</p>
+                <p id="type4">Type 4</p>
+            </div>
+
+            <div class="display" id="type_1">
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 1</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 1</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 1</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 1</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 1</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display" id="type_2">
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 2</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 2</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 2</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display" id="type_3">
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 3</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 3</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 3</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display" id="type_4">
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 4</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" autoplay muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 4</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 4</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
+                <div class="display_element">
+                    <video src="../Assets/SHOWREEL1.mp4" muted></video>
+                    <div class="display_title">
+                        <h1>Work Type 4</h1>
+                        <p>At this place</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
 </body>
+
+<script>
+    new kursor({
+        type: 1,
+        removeDefaultCursor: false,
+        color: 'rgba(128,0,128, 0.5)'
+    })
+</script>
+
 </html>
