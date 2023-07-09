@@ -120,7 +120,6 @@ nav{
 
 /* hero */
 .hero_container{
-    position: relative;
     height: 70vh;
 }
 
@@ -128,6 +127,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .hero video{
@@ -744,7 +744,7 @@ footer hr{
 
 
     .nav_links{
-        position:absolute;
+        position:fixed;
         right: -100%;
         top: 75px;
         flex-direction: column;
@@ -783,6 +783,16 @@ footer hr{
         color: rgba(255, 255, 255);
     }
 
+    .has-submenu:hover, .has-submenu:active .submenu {
+        margin-top: 0px;
+        padding: 0px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
 
     .hero_nav_container{
         height: 65vh;
@@ -792,13 +802,13 @@ footer hr{
         font-size: 65px;
         font-weight: 500;
         position: absolute;
-        top: 20%;
+        top: 18%;
         left: 15%;
     }
 
     .hero_editing{
         font-size: 65px;
-        bottom: 35%;
+        bottom: 11%;
     }
 
     .about_us h1{
@@ -934,14 +944,12 @@ footer hr{
     .hero_video {
         font-size: 70px;
         font-weight: 500;
-        position: absolute;
-        top: 20%;
-        left: 15%;
+        left: 10%;
     }
 
     .hero_editing{
         font-size: 70px;
-        bottom: 40%;
+        bottom: 10%;
     }
 
 }
@@ -957,12 +965,9 @@ footer hr{
         font-size: 65px;
         font-weight: 500;
         position: absolute;
-        top: 18%;
-        left: 15%;
     }
 
     .hero_editing{
         font-size: 65px;
-        bottom: 45%;
     }
 }

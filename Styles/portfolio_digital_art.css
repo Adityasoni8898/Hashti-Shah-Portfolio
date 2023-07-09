@@ -226,7 +226,7 @@ line-height: normal;
 
 
     .nav_links{
-        position:absolute;
+        position:fixed;
         right: -100%;
         top: 75px;
         flex-direction: column;
@@ -264,5 +264,16 @@ line-height: normal;
     .submenu a {
         color: rgba(255, 255, 255);
     }
+
+    .has-submenu:hover, .has-submenu:active .submenu {
+        margin-top: 0px;
+        padding: 0px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
     
 }
