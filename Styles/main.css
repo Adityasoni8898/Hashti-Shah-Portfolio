@@ -90,7 +90,7 @@ nav{
     color: rgba(255, 255, 255, 0.85);
 }
 
-.has-submenu:hover .submenu {
+.has-submenu:hover, .has-submenu:active .submenu {
     margin-top: 5px;
     padding: 20px;
     background-color: rgb(0, 0, 0);
@@ -101,6 +101,21 @@ nav{
     gap: 10px;
 }
 
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    height: 3px;
+    width: 35px;
+    margin: 6px auto;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
 
 
 /* hero */
@@ -698,6 +713,76 @@ footer hr{
 
 
 @media screen and (max-width:750px){
+
+
+
+    nav {
+        padding: 1.5% 25px;
+    }
+
+    .logo img {
+        margin-top: 10px;
+        height: 50px;
+        color: purple;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav_links{
+        position:absolute;
+        right: -100%;
+        top: 75px;
+        flex-direction: column;
+        justify-content: left;
+        gap: 12px;
+        background-color: rgba(0, 0, 0, 0.9);  
+        width: 100%;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .nav_links a{
+        font-size: 20px;
+    }
+
+    .nav_links.active{
+        right: 0;
+        z-index: 2;
+        padding: 12px 0;
+    }
+
+    .has-submenu>a{
+        display: none;
+    }
+
+    .submenu{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .submenu a {
+        color: rgba(255, 255, 255);
+    }
+
 
     .hero_nav_container{
         height: 65vh;
