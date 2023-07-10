@@ -1016,6 +1016,10 @@ footer hr{
         align-items: center;
     }
 
+    footer hr{
+        margin-top: 41px;
+    }
+
     .footer_end {
         margin-top: 41px;
         margin-bottom: 41px;

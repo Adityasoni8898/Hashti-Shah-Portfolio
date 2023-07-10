@@ -274,5 +274,53 @@ line-height: normal;
         align-items: left;
     }
 
+
+
+
+
+
+    main {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    .work_types{
+        margin-top: 15px;
+    }
+
+    .portfolio_title h1{
+        font-size: 12vw;
+    }    
+
+    .work_types p {
+        font-size: 21px;
+    }
+
+    .display{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 31px;
+    }
+    
+    .display_element video {
+        height: auto;
+        width: 99%;
+    }
+
+    .display_title {
+        padding: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .display_title h1{
+        font-size: 18px;
+    }
+
+    .display_title p{
+        font-size: 14px;
+    }   
+
     
 }
