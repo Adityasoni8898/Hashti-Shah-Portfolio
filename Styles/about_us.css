@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+:root {
+    --custom_grey: #353535;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Hind', sans-serif;
+    color: white;
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+}
+
+.active_link {
+    text-decoration: underline;
+}
+
+header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, #000 100%), url("../Assets/hero_background.jpg"), lightgray 0px -10.548px / 100% 113.001% no-repeat;
+}
+
+
+/* nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 6%;
+}
+
+.logo img {
+    height: 75px;
+    color: purple;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+
+.nav_links a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.nav_links a:hover {
+    text-decoration: underline;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.submenu a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.has-submenu:hover .submenu {
+    margin-top: 5px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    height: 3px;
+    width: 35px;
+    margin: 6px auto;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+/* hero */
+
+.hero {
+    padding: 0 5%;
+}
+
+
+/* about me */
+
+.hero h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.about_me {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.my_image img {
+    width: 30vw;
+}
+
+.my_text h2 {
+    padding: 20px;
+    color: #FFF;
+    font-family: Hind;
+    font-size: 53px;
+    font-weight: 600;
+}
+
+.my_text p {
+    font-size: 1.25rem;
+    max-width: 33rem;
+}
